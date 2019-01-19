@@ -15,7 +15,7 @@ print(name_length)
 now_doing <- paste(my_name, "is programming")
 
 # Make the `now_doing` variable upper case
-now_doing <- toupper(now_doing)
+toupper(now_doing)
 
 ### Bonus
 
