@@ -26,7 +26,7 @@ flights <- arrange(flights, -gain_in_air)
 # For practice, repeat the last 2 steps in a single statement using the pipe
 # operator. You can clear your environmental variables to "reset" the data frame
 flights <- flights %>% 
-  mutate(year) %>% 
+  mutate(gain_in_air = arr_delay - dep_delay) %>% 
   arrange(gain_in_air)
 
 # Make a histogram of the amount of time gained using the `hist()` function
