@@ -52,7 +52,7 @@ worst <- over_20_2wd[over_20_2wd$hwy == min(over_20_2wd$hwy), "id"]
 best_mpg <- function(year_choice, make_choice) {
   choice_cars <- vehicles[vehicles$year == year_choice & 
                             vehicles$make == make_choice, ]
-  choice_cars[choice_cars$hwy == max(choice_cars$hwy),]
+  choice_cars[choice_cars$hwy == max(choice_cars$hwy), "model"]
 }
 
 # What was the most efficient Honda model of 1995?
