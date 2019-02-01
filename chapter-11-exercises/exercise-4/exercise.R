@@ -11,7 +11,10 @@ library(dplyr)
 # What are the names of the columns?
 # Use `??flights` to search for documentation on the data set (for what the 
 # columns represent)
-
+nrow(flights)
+ncol(flights)
+colnames(flights)
+?flights
 
 # Use `dplyr` to give the data frame a new column that is the amount of time
 # gained or lost while flying (that is: how much of the delay arriving occured
